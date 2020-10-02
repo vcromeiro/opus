@@ -9,8 +9,8 @@
                     <div style="margin-bottom: 45px;">
                         <img src="/img/white-logo.png" alt="">
                     </div>
-                    <h1 style="line-height: 52px;font-size: 38px; font-weight: 700; width: 610px; margin: auto auto 24px;color: white;font-weight: 100;">Opus lets you work more collaboratively and get more done.</h1>
-                    <p class="minor-text" style="font-size: 17px;width: 550px;margin: auto auto 24px;font-weight: normal;color: white;">Opus let you work more collaboratively to document who you are, what you do and how to achieve results.</p>
+                    <h1 style="line-height: 52px;font-size: 38px; font-weight: 700; width: 610px; margin: auto auto 24px;color: white;font-weight: 100;">{{ env('APP_NAME', 'Opus') }} lets you work more collaboratively and get more done.</h1>
+                    <p class="minor-text" style="font-size: 17px;width: 550px;margin: auto auto 24px;font-weight: normal;color: white;">{{ env('APP_NAME', 'Opus') }} let you work more collaboratively to document who you are, what you do and how to achieve results.</p>
                     <div class="brand-buttons text-center">
                         <a href="{{ route('team.create') }}" class="btn btn-default home-head-btn">Create Team</a>
                         <a href="{{ route('team.login') }}" class="btn btn-default home-head-btn">Login Team</a>
@@ -22,7 +22,7 @@
 			<div class="row no-container">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 					<h1 style="font-weight: 100; font-size: 38px; margin-bottom: 15px;">Elegant UI and so much more.</h1>
-					<p style="color: rgba(0,0,0,0.55); font-size: 17px; line-height: 24px; font-weight: 400; margin: 0 0 70px; ">Check out all you can do in Opus.</p>
+					<p style="color: rgba(0,0,0,0.55); font-size: 17px; line-height: 24px; font-weight: 400; margin: 0 0 70px; ">Check out all you can do in {{ env('APP_NAME', 'Opus') }}.</p>
 				</div>
 			</div>
 			<div class="row no-container" style="width: 1130px; margin: auto;">
@@ -47,7 +47,7 @@
 						<div class="media-body">
 							<h4 class="media-heading" style="margin-bottom: 10px; font-size: 16px; font-weight: 600; line-height: 26px; color: #444444;">Touch-Optimized</h4>
 							<p style="font-size: 14px; color: #444444; line-height: 22px; font-weight: 300;">
-								Opus looks stunning on desktop, tablet or phone. Our fully responsive design adjusts perfectly to fit all your devices.
+								{{ env('APP_NAME', 'Opus') }} looks stunning on desktop, tablet or phone. Our fully responsive design adjusts perfectly to fit all your devices.
 							</p>
 						</div>
 					</div>
@@ -73,7 +73,7 @@
 						<div class="media-body">
 							<h4 class="media-heading" style="margin-bottom: 10px; font-size: 16px; font-weight: 600; line-height: 26px; color: #444444;">Notifications</h4>
 							<p style="font-size: 14px; color: #444444; line-height: 22px; font-weight: 300;">
-								Instantly received notification when some one mention you in comment. Opus has first-class notifications out of the box.
+								Instantly received notification when some one mention you in comment. {{ env('APP_NAME', 'Opus') }} has first-class notifications out of the box.
 							</p>
 						</div>
 					</div>
@@ -164,7 +164,7 @@
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <ul style="margin-bottom: 0;" class="list-inline list-unstyled">
                             <li><a href="#"><i class="fa fa-twitter fa-fw"></i> @Zeeshanu</a></li>
-                            <li><a href="#"><i class="fa fa-github-alt fa-fw"></i> Opus</a></li>
+                            <li><a href="#"><i class="fa fa-github-alt fa-fw"></i> {{ env('APP_NAME', 'Opus') }}</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">

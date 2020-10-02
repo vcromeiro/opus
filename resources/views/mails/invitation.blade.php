@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Opus</title>
+<title>{{ env('APP_NAME', 'Opus') }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <style type="text/css">
@@ -52,11 +52,11 @@
                                             <table border="0" cellpadding="0" cellspacing="0">
                                                 <tr>
                                                     <td align="center" style="font-size: 45px; text-transform: uppercase; text-align: center; font-weight: 700; color: #323b44; padding-top: 10px; padding-bottom: 10px;">
-                                                        Opus
+                                                        {{ env('APP_NAME', 'Opus') }}
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td align="center" style="padding: 0 0 5px 0; font-size: 14px; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;"><span style="font-size: 17px;">Opus is a place for your team to document who you are, what you do and how to achieve results.</span></span></td>
+                                                    <td align="center" style="padding: 0 0 5px 0; font-size: 14px; color: #666666; text-decoration: none;"><span style="color: #666666; text-decoration: none;"><span style="font-size: 17px;">{{ env('APP_NAME', 'Opus') }} is a place for your team to document who you are, what you do and how to achieve results.</span></span></td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -85,7 +85,7 @@
                                                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                               <tr>
                                                                   <td>
-                                                                      <img src="{{env('APP_URL', 'http://opus.dev')}}/img/responsive-email.jpg" width="500" height="200" border="0" style="display: block; padding: 0; color: #666666; text-decoration: none; font-size: 16px; width: 500px; height: 200px;" class="img-max">
+                                                                      <img src="{{env('APP_URL', 'http://{{ env('APP_NAME', 'Opus') }}.dev')}}/img/responsive-email.jpg" width="500" height="200" border="0" style="display: block; padding: 0; color: #666666; text-decoration: none; font-size: 16px; width: 500px; height: 200px;" class="img-max">
                                                                   </td>
                                                                 </tr>
                                                             </table>
@@ -102,7 +102,7 @@
                                                 <td align="center" style="font-size: 25px;  color: #333333; padding-top: 30px;" class="padding-copy">{{ $team->name }}</td>
                                             </tr>
                                             <tr>
-                                                <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; color: #666666;" class="padding-copy">You are invited to <b>{{ $team->name }}</b> team on opus. Click on the below link and register yourself on opus to join this team.</td>
+                                                <td align="center" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; color: #666666;" class="padding-copy">You are invited to <b>{{ $team->name }}</b> team on {{ env('APP_NAME', 'Opus') }}. Click on the below link and register yourself on {{ env('APP_NAME', 'Opus') }} to join this team.</td>
                                             </tr>
                                         </table>
                                     </td>
