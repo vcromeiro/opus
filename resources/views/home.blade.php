@@ -7,7 +7,7 @@
             <div>
                 <div style="padding: 109px 0px;" class="text-center">
                     <div style="margin-bottom: 45px;">
-                        <img src="/img/white-logo.png" alt="">
+                        <img src="/img/white-logo.png" alt="" style="filter: brightness(0) invert(1);">
                     </div>
                     <h1 style="line-height: 52px;font-size: 38px; font-weight: 700; width: 610px; margin: auto auto 24px;color: white;font-weight: 100;">{{ env('APP_NAME', 'Opus') }} lets you work more collaboratively and get more done.</h1>
                     <p class="minor-text" style="font-size: 17px;width: 550px;margin: auto auto 24px;font-weight: normal;color: white;">{{ env('APP_NAME', 'Opus') }} let you work more collaboratively to document who you are, what you do and how to achieve results.</p>
