@@ -381,11 +381,13 @@ class UserController extends Controller
             'password' => 'required|min:6|confirmed',
         ]);
 
-        $passwordReset = DB::table('password_resets')->where('token', $token)->first();
+        $passwordReset = DB::table('password_resets')->where('token', $token)->get();
 
         if (!count($passwordReset)) {
             abort(404);
         }
+
+	$passwordReset = DB::table('password_resets')->where('token', $token)->first();
 
         $user = $this->findUser($passwordReset);
 
